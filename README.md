@@ -7,7 +7,7 @@ URL: https://wrappeeer.vercel.app
 ![Screenshot_4](https://github.com/michasa001/Wrappeeer/assets/134693770/9ade4e25-4a3c-4249-b0e2-d039a2049be9)
 
 
-Wrapped tokens are clones which are minted when a user deposits the original token. For instance, native sepolia don't have the erc20 features, hence to interact with sepolia on evm chain, it has to be wrapped and a clone is generated of equal value as the sepolia deposited(locked). When a user is done with the wrapped tokens, he or she can then unlock the original native sepolia by burning the wrapped token.
+Wrapped tokens are clones which are created from the original tokens of a user. The user has to deposit or lock the original tokens in a custodial(in this case a smart contract). But why cloning these tokens? Lets take sepolia; Native sepolia don't have the erc20 features, hence to interact on the evm chain with sepolia, it has to be wrapped. The generated clone is of equal value as the sepolia deposited(locked). When the user is done with the wrapped tokens, the original sepolia can then be unlocked by burning the wrapped token.
 
 There are four sections here, allowing you to wrap sepolia, unwrap sepolia, wrap mock tokens and unwrap it.
 
