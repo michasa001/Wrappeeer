@@ -1,19 +1,17 @@
-# 🏗 Scaffold-ETH 2
+# WRAPPEEER
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+WRAPPEEER allows users to wrap native eth and erc20 tokens on the sepolia network.
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+URL: https://wrappeeer.vercel.app
 
-⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, and Typescript.
+![Screenshot_4](https://github.com/michasa001/Wrappeeer/assets/134693770/9ade4e25-4a3c-4249-b0e2-d039a2049be9)
 
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/1171422a-0ce4-4203-bcd4-d2d1941d198b)
+Wrapped tokens are clones which are minted when a user deposits the original token. For instance, native sepolia don't have the erc20 features, hence to interact with sepolia on evm chain, it has to be wrapped and a clone is generated of equal value as the sepolia deposited(locked). When a user is done with the wrapped tokens, he or she can then unlock the original native sepolia by burning the wrapped token.
+
+There are four sections here, allowing you to wrap sepolia, unwrap sepolia, wrap mock tokens and unwrap it.
+
+Check `packages/hardhat/contracts` to learn how the contracts work. 
 
 ## Requirements
 
@@ -30,49 +28,15 @@ To get started with Scaffold-ETH 2, follow the steps below:
 1. Clone this repo & install dependencies
 
 ```
-git clone https://github.com/scaffold-eth/scaffold-eth-2.git
-cd scaffold-eth-2
+git clone https://github.com/michasa001/Wrappeeer.git
+cd Wrappeeer
 yarn install
 ```
 
-2. Run a local network in the first terminal:
-
-```
-yarn chain
-```
-
-This command starts a local Ethereum network using Hardhat. The network runs on your local machine and can be used for testing and development. You can customize the network configuration in `hardhat.config.ts`.
-
-3. On a second terminal, deploy the test contract:
-
-```
-yarn deploy
-```
-
-This command deploys a test smart contract to the local network. The contract is located in `packages/hardhat/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/hardhat/deploy` to deploy the contract to the network. You can also customize the deploy script.
-
-4. On a third terminal, start your NextJS app:
+4. On another terminal, start your NextJS app:
 
 ```
 yarn start
 ```
 
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
-
-Run smart contract test with `yarn hardhat:test`
-
-- Edit your smart contract `YourContract.sol` in `packages/hardhat/contracts`
-- Edit your frontend in `packages/nextjs/pages`
-- Edit your deployment scripts in `packages/hardhat/deploy`
-
-## Documentation
-
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
-
-To know more about its features, check out our [website](https://scaffoldeth.io).
-
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+Visit your app on: `http://localhost:3000`.

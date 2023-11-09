@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { MetaHeader } from "~~/components/MetaHeader";
 import WrapSepolia from "~~/components/WrapSepolia";
 import UnwrapSepolia from "~~/components/UnwrapSepolia";
