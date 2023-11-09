@@ -62,8 +62,8 @@ const WrapMock = () => {
         <h1>{wmockBalance ? `${formatEther(wmockBalance)} WMOCK` : "0 WMOCK "}</h1></div>
 
       <InputBase value={amount} onChange={value => { setAmount(value) }} />
-      <div className='flex justify-around'> <button onClick={() => mintMock()} className='btn btn-sm btn-primary rounded-md w-[45%] mt-2 mb-2'>MINT 100 MOCK</button>
-        <button type="submit" disabled={amount === ""} className='btn btn-sm btn-primary rounded-md w-[45%]  mt-2'>{allowance && parseEther(amount) <= allowance ? "WRAP" : "APPROVE"}</button></div>
+      <div className='flex justify-around'> <button onClick={() => mintMock()} className='btn btn-sm btn-accent rounded-md w-[45%] mt-2 mb-2'>MINT 100 MOCK</button>
+        <button type="submit" disabled={amount === ""} className='btn btn-sm btn-accent rounded-md w-[45%]  mt-2'>{allowance && parseEther(amount) <= allowance ? "WRAP" : "APPROVE"}</button></div>
 
     </form>
   )

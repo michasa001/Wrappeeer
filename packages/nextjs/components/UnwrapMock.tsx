@@ -46,7 +46,7 @@ const UnwrapMock = () => {
         <h1>{wmockBalance ? `${formatEther(wmockBalance)} WMOCK` : "0 WMOCK "}</h1></div>
 
       <InputBase value={amount} onChange={value => { setAmount(value) }} />
-      <button type="submit" disabled={amount === ""} className='btn btn-sm btn-primary rounded-md w-full mt-2'>UNWRAP</button>
+      <button type="submit" disabled={amount === ""} className='btn btn-sm btn-accent rounded-md w-full mt-2'>UNWRAP</button>
     </form>
   )
 }

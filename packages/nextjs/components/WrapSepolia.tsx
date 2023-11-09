@@ -32,7 +32,7 @@ const WrapSepolia = () => {
       <p className='text-center'> Wrap Sepolia</p>
       <h1>{balance ? `Balance: ${formatEther(balance)} WSEP` : ""}</h1>
       <EtherInput value={amount} onChange={(value) => { setAmount(value) }} />
-      <button type="submit" disabled={amount === ""} className='btn btn-sm btn-primary rounded-md w-full mt-2'>WRAP</button>
+      <button type="submit" disabled={amount === ""} className='btn btn-sm btn-accent rounded-md w-full mt-2'>WRAP</button>
     </form>
   )
 }
